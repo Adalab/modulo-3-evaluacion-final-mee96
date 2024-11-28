@@ -8,7 +8,9 @@ import Portal from '/images/adventure-time-portal.gif'
 import "../scss/layout/Detalles.scss";
 
 
-function Detalles() {
+function Detalles({characterID}) {
+    console.log(characterID)
+    
   return (
     <section className='details'>
 
@@ -17,12 +19,14 @@ function Detalles() {
         </div>
 
         <div> 
-            <img src="" alt="" />
-            <h3>Nombre</h3>
-            <p>Status</p>
-            <p>especie</p>
-            <p>Origen</p>
-            <p>Episodios</p>
+            <img src={characterID.image} alt="foto del personaje" />
+            <h3>{characterID.name} - {characterID.species}</h3>
+            <p>Current status: {characterID.status}</p>
+            <p>Born in: {characterID.origin.name}</p>
+            <p>Appears in {characterID.episode.length} episodes</p>
+        </div>
+         <div> 
+            <img className='portal' src={Portal} alt="Gif del Portal" />
         </div>
 
     </section>

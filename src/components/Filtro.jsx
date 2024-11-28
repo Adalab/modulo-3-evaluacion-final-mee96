@@ -1,15 +1,16 @@
-import React from 'react'
-import FiltroNombre from './FiltroNombre'
-import FiltroEspecie from './FiltroEspecie'
+import React from 'react';
+import FiltroNombre from './FiltroNombre';
 
-function Filtro({onChangeName}) {
+function Filtro({ onChangeName }) {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  };
+
   return (
-   <form>
-        <FiltroNombre onChangeName={onChangeName}/>
-    
-
-   </form>
-  )
+    <form onSubmit={handleSubmit}>
+      <FiltroNombre onChangeName={onChangeName} />
+    </form>
+  );
 }
 
-export default Filtro
+export default Filtro;

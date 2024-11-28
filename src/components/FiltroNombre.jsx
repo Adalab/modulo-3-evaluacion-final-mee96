@@ -16,6 +16,7 @@ import { useState } from "react"; // hooks(funcion)  de React
 function FiltroNombre({onChangeName}) {
   
     const handleChange = (ev) => {
+        
        onChangeName(ev.target.value)
        
     }

@@ -20,7 +20,7 @@ Sigue estos pasos para instalar y ejecutar la aplicación en tu máquina local:
 
 ### 1. Clonar el repositorio
 
-`git clone https://github.com/tu-usuario/modulo-3-evaluacion-final-mee96.git`
+`git clone https://github.com/Adalab/modulo-3-evaluacion-final-mee96.gitt`
 
 ### 2. Instalar dependencias
 

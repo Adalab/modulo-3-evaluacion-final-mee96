@@ -6,7 +6,7 @@ function Filtro({onChangeName}) {
   return (
    <form>
         <FiltroNombre onChangeName={onChangeName}/>
-        <FiltroEspecie />
+    
 
    </form>
   )

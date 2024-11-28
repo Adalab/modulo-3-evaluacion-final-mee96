@@ -1,9 +1,10 @@
 import "../scss/App.scss";
 import { useState, useEffect } from "react";
 import Header from "./Header";
-import FiltroNombre from "./FiltroNombre";
 import Listado from "./Listado";
 import Filtro from "./Filtro";
+import { Routes, Route } from "react-router-dom";
+import Detalles from "./Detalles";
 
 
 function App() {
@@ -38,8 +39,13 @@ function App() {
         <> 
         <Header />
         <main> 
-        <Filtro onChangeName={handleFilterName}/>
-        <Listado characters={characters}/>
+                <Filtro onChangeName={handleFilterName}/>
+                <Listado characters={filteredCharacters}/>
+
+                <Routes>
+                    <Route path='/character/:idCarachter' element={<Detalles />} />
+            
+                </Routes>
         </main>
         </>
     )

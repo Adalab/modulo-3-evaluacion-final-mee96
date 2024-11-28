@@ -5,6 +5,7 @@ Quan fem clic en una targeta, apareixerà a pantalla completa amb més detalls s
 
 
 import Portal from '/images/adventure-time-portal.gif'
+import "../scss/layout/Detalles.scss";
 
 
 function Detalles() {
@@ -21,7 +22,7 @@ function Detalles() {
             <p>Status</p>
             <p>especie</p>
             <p>Origen</p>
-            <P>Episodios</P>
+            <p>Episodios</p>
         </div>
 
     </section>

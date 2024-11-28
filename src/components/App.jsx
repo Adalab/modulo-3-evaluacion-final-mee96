@@ -39,10 +39,16 @@ function App() {
         <> 
         <Header />
         <main> 
-                <Filtro onChangeName={handleFilterName}/>
-                <Listado characters={filteredCharacters}/>
+                
 
                 <Routes>
+
+                    <Route path="/" element={
+                        <>
+                            <Filtro onChangeName={handleFilterName}/>
+                            <Listado characters={filteredCharacters}/>
+                        </>
+                    }/>
                     <Route path='/character/:idCarachter' element={<Detalles />} />
             
                 </Routes>

@@ -9,11 +9,11 @@ function Personaje({personajeData}) {
         <li className='tarjeta'>
 
            <Link to={`/character/${personajeData.id}`} >             
-            <img className='photo' src={personajeData.image} alt="imagen cada personaje" />
-            <div className='texto'> 
-            <h3>{personajeData.name}</h3>
-            <p>{personajeData.species}</p>
-            </div>
+              <img className='photo' src={personajeData.image} alt="imagen cada   personaje" />
+              <div className='texto'> 
+                <h3>{personajeData.name}</h3>
+                <p>{personajeData.species}</p>
+              </div>
             </Link> 
         </li>
   )

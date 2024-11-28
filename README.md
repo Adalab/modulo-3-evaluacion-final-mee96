@@ -2,7 +2,7 @@
 
 # Rick and Morty
 
-Una aplicación web para buscar y visualizar información sobre los personajes de la famosa serie **Rick and Morty**. Utiliza la API pública de [Rick and Morty]([https://rickandmortyapi.com/](https://rickandmortyapi.com/documentation/#get-all-characters)) para obtener datos sobre los personajes, sus características y episodios en los que aparecen.
+Una aplicación web para buscar y visualizar información sobre los personajes de la famosa serie **Rick and Morty**. Utiliza la API pública de [Rick and Morty](https://rickandmortyapi.com/documentation/#get-all-characters) para obtener datos sobre los personajes, sus características y episodios en los que aparecen.
 
 ## Funcionalidades
 

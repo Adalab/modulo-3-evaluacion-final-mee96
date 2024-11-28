@@ -38,7 +38,6 @@ function App() {
 
    /*Exercici 4
    --Saber si estic dins la ruta dinamica (Detalles)-->Obtindre l'ID de la url i tambe mostrar lo personatge en este ID--->pasar la info del personatge a dins la ruta Detalles
-
    */
 
    const {pathname} = useLocation();

@@ -11,7 +11,7 @@ import { useState } from "react"; // hooks(funcion)  de React
 
 */
 
-
+import "../scss/layout/FiltroNombre.scss";
 
 function FiltroNombre({onChangeName}) {
   
@@ -22,7 +22,7 @@ function FiltroNombre({onChangeName}) {
     }
   return (
     
-        <label htmlFor="name">
+        <label htmlFor="name" className='filtro-label'>
             <input id="id" type="text" placeholder='Nombre personaje...' onChange={handleChange}/>
         </label>
    

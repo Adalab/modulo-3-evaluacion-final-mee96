@@ -1,22 +1,30 @@
 import React from 'react'
 import { useState } from "react"; // hooks(funcion)  de React
 
-function FiltroNombre() {
 
-   /* const [character, setcharacter] = useState({
-        name: "",
-        photo: "",
-        specie: []
-    });*/
-    const handleName = (ev) => {
-       console.log(ev.target.value)
+
+/*
+**Quan la usuario escriu al input del nom:
+    -Recullir lo valor del input
+    -filtrar al objecte lo nom i si concideix amb el meu inoput
+    -pintar la llista al html
+
+*/
+
+
+
+function FiltroNombre({onChangeName}) {
+  
+    const handleChange = (ev) => {
+       onChangeName(ev.target.value)
+       
     }
   return (
-    <form action="">
+    
         <label htmlFor="name">
-            <input id="id" type="text" placeholder='Nombre personaje...' onChange={handleName}/>
+            <input id="id" type="text" placeholder='Nombre personaje...' onChange={handleChange}/>
         </label>
-    </form>
+   
   )
 }
 

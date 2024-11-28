@@ -1,7 +1,12 @@
 .Header{
     background-color: greenyellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+   &__image{
+    width: 20%;
+   }
 }
 
-.image{
-    width: 50%;
-}

@@ -4,9 +4,8 @@ import "../scss/layout/Header.scss";
 
 function Header() {
   return (
-    <header className='Hedaer'>
-        <img className='image' src={Logo} alt="Logo Rick N Morty" />
-
+    <header className='Header'>
+        <img className='Header__image' src={Logo} alt="Logo Rick N Morty" />
     </header>
   )
 }

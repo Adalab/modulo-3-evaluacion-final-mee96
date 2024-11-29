@@ -24,7 +24,11 @@ function Detalles({ characterID }) {
           <h3>{characterID.name} - {characterID.species}</h3>
           <p>Current status: {characterID.status}</p>
           <p>Born in: {characterID.origin.name}</p>
-          <p>Appears in {characterID.episode.length} episodes</p>
+          <p>
+            {characterID.episode.length === 51
+              ? `It's fucking ${characterID.name} and he appears in every episode`
+              : `Appears in ${characterID.episode.length} episodes`}
+          </p>
            <div className="back-link">
             <Link  to="/">Volver</Link>
           </div>

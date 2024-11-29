@@ -5,3 +5,24 @@
     align-items: center;
     justify-content: center;
 }
+
+
+ .back-link{
+    margin-top: 10%;
+     display: inline-block;
+     padding: 10px 20px;
+     background-color: greenyellow; 
+     color: #8458B3;
+     text-decoration: none; 
+     border-radius: 5px; 
+     font-weight: bold; 
+     font-size: 16px; 
+     transition: background-color 0.3s ease; 
+
+     &:hover {
+        background-color: #8458B3;
+            color: greenyellow;
+         cursor: pointer; 
+     }
+ }
+ 

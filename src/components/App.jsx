@@ -9,11 +9,10 @@ import Detalles from "./Detalles";
 function App() {
   const [characters, setCharacters] = useState([]);
   const [filterName, setFilterName] = useState(() => {
-    // Cargar el filtro desde Local Storage al iniciar la app
-    return localStorage.getItem("filterName") || ""; // Si no existe, usa una cadena vacía
+    return localStorage.getItem("filterName") || ""; 
   });
 
-  // Obtener los datos de la API de Rick & Morty
+  
   useEffect(() => {
     fetch("https://rickandmortyapi.com/api/character")
       .then((res) => res.json())
@@ -29,12 +28,12 @@ function App() {
     localStorage.setItem("filterName", filterName);
   }, [filterName]);
 
-  // Actualizar el estado del filtro
+  
   const handleFilterName = (value) => {
     setFilterName(value);
   };
 
-  // Filtrar personajes según el texto ingresado
+  
   const filteredCharacters = characters.filter((character) => {
     return character.name.toLowerCase().includes(filterName.toLowerCase());
   });
@@ -60,18 +59,18 @@ function App() {
       <Header />
       <main>
         <Routes>
-          {/* Página principal */}
+        
           <Route
             path="/"
             element={
               <>
-                {/* Pasar el valor actual del filtro y la función para actualizarlo */}
+                
                 <Filtro onChangeName={handleFilterName} value={filterName} />
                 <Listado characters={filteredCharacters} filterName={filterName} />
               </>
             }
           />
-          {/* Página de detalles */}
+          
           <Route path="/character/:idCarachter" element={<Detalles characterID={characterID} />} />
         </Routes>
       </main>

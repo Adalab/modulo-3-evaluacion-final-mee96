@@ -6,7 +6,7 @@ function Listado({ characters, filterName }) {
   return (
     <section >
       {characters.length === 0 ? (
-        <p>
+        <p className='texto-no-coincide'>
           No hay ningún personaje que coincida con "{filterName}".
         </p>
       ) : (

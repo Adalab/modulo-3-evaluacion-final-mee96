@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from "react"; // hooks(funcion)  de React
+
 
 
 
@@ -15,7 +15,7 @@ import "../scss/layout/FiltroNombre.scss";
 
 function FiltroNombre({ onChangeName, value }) {
   const handleChange = (ev) => {
-    onChangeName(ev.target.value); // Llama a la función pasada como prop con el valor actual del input
+    onChangeName(ev.target.value); 
   };
 
   return (
@@ -24,8 +24,8 @@ function FiltroNombre({ onChangeName, value }) {
         id="id"
         type="text"
         placeholder="Nombre personaje..."
-        value={value} // Asegura que el input refleje el valor actual del filtro
-        onChange={handleChange} // Maneja los cambios en el campo de texto
+        value={value} 
+        onChange={handleChange} 
       />
     </label>
   );

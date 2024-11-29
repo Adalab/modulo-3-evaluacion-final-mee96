@@ -1,14 +1,14 @@
 import React from 'react';
 import FiltroNombre from './FiltroNombre';
 
-function Filtro({ onChangeName }) {
+function Filtro({ onChangeName, value }) {
   const handleSubmit = (event) => {
-    event.preventDefault();
+    event.preventDefault(); // Evita recargar la página
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      <FiltroNombre onChangeName={onChangeName} />
+      <FiltroNombre onChangeName={onChangeName} value={value} />
     </form>
   );
 }
